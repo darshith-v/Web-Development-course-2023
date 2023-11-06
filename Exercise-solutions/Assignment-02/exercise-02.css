@@ -1,0 +1,52 @@
+.button{
+  padding:10px;
+}
+
+
+.pagination a{
+  padding: 8px;
+}
+
+
+.Stretchbutton{
+  border: none;
+  padding: 15px 40px;
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  display: block;
+}
+
+.Stretchbutton:hover{
+  padding: 20px 60px;
+  opacity: 0.8;
+  font-size: 20px;
+}
+
+.click{
+  padding: 15px 40px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+}
+
+.click:active{
+  margin: 10px;
+}
+
+.exercise4{
+  border: none;
+  padding: 15px 40px;
+  margin: 20px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+}
+
+.exercise4:hover{
+  margin: 15px;
+  padding: 15px 50px;
+}
