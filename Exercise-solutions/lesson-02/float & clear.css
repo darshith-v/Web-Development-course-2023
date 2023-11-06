@@ -1,0 +1,55 @@
+*{
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
+}
+
+.container{
+    width: 900px;
+    border: 2px solid red;
+    margin: auto;
+}
+.item{
+    border: 2px solid gray;
+    margin: 20px;
+    padding: 20px;
+}
+#fruit{
+    float: left;
+    width: 45%;
+}
+#computer{
+    float: right;
+    width: 45%;
+}
+#stationary{
+    width: 95%;
+    clear: both;
+}
+
+h3{
+    text-align: center;
+    color: green;
+}
+
+.Btn{
+    width: 9%;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium';
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(126, 126, 235);
+}
+button{
+    text-decoration: none;
+    color: white;
+    size: 5px;
+}
+
+.Btn:hover{
+    background-color: rgb(84, 84, 242);
+}
+a{
+    text-decoration: none;
+    border: 2px solid grey;
+}
+
