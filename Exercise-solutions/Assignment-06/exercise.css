@@ -1,0 +1,195 @@
+.rectangle{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.circle{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border-radius: 80px;
+}
+
+.service{
+  vertical-align: top;
+  width: 500px;
+  height: 100px;
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25px;
+}
+
+.question{
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.yes{
+  margin-left: 15px;
+  width: 50px;
+  height: 25px;
+}
+
+.no{
+  width: 50px;
+  height: 25px;
+}
+
+.youtube{
+  width: 600px;
+  border: 2px solid black;
+  padding: 15px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.title{
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.subtitle{
+  color: grey;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .overall{
+  display: inline-block;
+  width: 500px;
+  height: 80px;
+  border: 2px solid black;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+
+.button{
+  display: inline-block;
+}
+
+.details{
+  display: inline-block;
+
+}
+
+.thumbnail-row{
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.images{
+  width: 100%;
+  border-radius: 80px;
+
+}
+
+.name{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.group{
+
+}
+
+.status{
+
+}
+
+.follow{
+  vertical-align: middle;
+  float: right;
+} */
