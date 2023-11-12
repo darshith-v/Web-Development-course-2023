@@ -1,25 +1,13 @@
-*{
-  vertical-align: top;
+.overall{
+  display: grid;
+  grid-template-columns: 100px 150px 100px;
+  border: 2px solid black;
+  width: 350px;
 }
 
-.vertical-row-1{
-  display: inline-block;
-  width: 100px;
-  height: 120px;
-  margin-right: 0;
-  vertical-align: middle;
-}
-.vertical-row-2{
-  display: inline-block;
-  width: 100px;
-  height: 120px;
-  font-family: Arial;
-  margin-right: 15px;
-}
 .cat-pic{
   width: 80px;
   height: 80px;
-  display: inline-block;
   border-radius: 80px;
   object-fit: cover;  
   margin: 10px;
@@ -43,13 +31,6 @@
   margin: 0px;
 }
 
-.button{
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  vertical-align: middle;
-}
-
 .Follow{
   width: 90px;
   height: 40px;
@@ -58,9 +39,7 @@
   font-size: 20px;
   color: white;
   border-radius: 25px;
+  margin-top: 25px;
 }
 
-.overall{
-  border: 2px solid black;
-  display: inline-block;
-}
+
