@@ -10,8 +10,9 @@
   display: inline-block;
   width: 150px;
   height: 150px;
-  background-color: green;
   border-radius: 80px;
+  background-color: green;
+  
 }
 
 .service{
@@ -45,6 +46,7 @@
   padding: 15px;
   background-color: black;
   margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 .title{
@@ -63,25 +65,100 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.chatting{
+  display: inline-block;
+  border: 2px solid black;
+}
 
+.button,
+.input{
+  display: inline-block;
+  margin-top: 35px;
+}
 
+.cat-picture{
+  display: inline-block;
+  width: 50px;
+  height: 100px;
+  vertical-align: top;
+  margin-top: 25px;
+  margin-left: 15px;
+}
 
+.image{
+  width: 100%;
+  height: 50%;
+  display: inline-block;
+  border-radius: 80px;
+  vertical-align: top;
+}
 
+.messege-box{
+  border: none;
+  height: 30px;
+  font-size: 25px;
+  margin-right: 15px;
+}
 
+.twitter{
+  border: none;
+  height: 40px;
+  width: 105px;
+  font-size: 20px;
+  border-radius: 25px;
+  background-color: rgb(18, 173, 245);
+  color: white;
+  font-weight: bold;
+  margin-right: 15px;
+}
 
+.Friend-profile{
+  display: inline-block;
+  box-shadow: 5px 5px 5px #8e8c8c;
+  margin-left: 25px;
+  border-radius: 15px;
+}
+.profile-picture{
+  width: 200px;
+  margin: 0;
+}
 
+.big-cat{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
+.detail{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+}
 
+.cat-name{
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
 
+.frind-stats{
+  margin-top: 5px;
+  color: grey;
+}
 
-
-
-
-
-
-
-
-
+.add-friend{
+  border-radius: 5px;
+  margin-left: 5px;
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  background-color: rgb(71, 137, 250);
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom:10px;
+}
 
 
 

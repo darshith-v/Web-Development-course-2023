@@ -1,0 +1,66 @@
+*{
+  vertical-align: top;
+}
+
+.vertical-row-1{
+  display: inline-block;
+  width: 100px;
+  height: 120px;
+  margin-right: 0;
+  vertical-align: middle;
+}
+.vertical-row-2{
+  display: inline-block;
+  width: 100px;
+  height: 120px;
+  font-family: Arial;
+  margin-right: 15px;
+}
+.cat-pic{
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  border-radius: 80px;
+  object-fit: cover;  
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.name{
+  font-weight: bold;
+  margin-top: 15px;
+
+}
+
+.cast{
+  color: grey;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.status{
+  color: grey;
+  margin: 0px;
+}
+
+.button{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.Follow{
+  width: 90px;
+  height: 40px;
+  border: none;
+  background-color: rgb(24, 149, 227);
+  font-size: 20px;
+  color: white;
+  border-radius: 25px;
+}
+
+.overall{
+  border: 2px solid black;
+  display: inline-block;
+}
