@@ -1,24 +1,15 @@
-.search-bar{
-  display: block;
-}
-
- p{
-  font-family: 'Roboto', Arial;
-  margin: 0;
-  padding: 0;
-}
 .thumbnails{
   width: 100%;
 }
 
-.video-grid{
+.video-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
 }
 
-.video-info-grid{
+.video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
@@ -30,15 +21,15 @@
 }
 
 .video-titles{
-  width: 200px;
   font-weight: 500;
-  margin-bottom: 10px;
-  font-size: 13px;
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-size: 14px;
   line-height: 20px;
 }
 
 .thumbnail-row{
-  margin-bottom: 12px;
+  margin-bottom:12px;
 }
 
 .video-stats,
@@ -46,15 +37,6 @@
   font-size: 12px;
   margin-bottom:5px;
 }
-
-
-
-
-
-
-
-
-
 
 
 .video-title{
