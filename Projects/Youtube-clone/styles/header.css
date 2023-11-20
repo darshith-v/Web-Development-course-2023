@@ -1,8 +1,17 @@
 .header{
+  height: 55px;
+
   display: flex;
   flex-direction: row;
-  height: 55px;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+
+  border-bottom: 1px solid rgb(215, 215, 213);
 }
 
 .left-section{
@@ -38,12 +47,13 @@
 }
 
 .search-button{
-  height: 38px;
-  width: 66px;
-  border-width: 1px;
-  border-color: rgba(196, 195, 195, 0.785);
-  border-style: solid;
-  margin-left: -1px;
+  height: 40px;
+  width: 64px;
+  border: 1px solid #cccccc;
+  margin-left: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
 }
 
 .search-icon{
@@ -53,14 +63,15 @@
 
 .search-bar{
   flex: 1;
-  height: 34px;
+  height: 39px;
   padding-left: 10px;
   font-size: 16px;
   border-radius: 2px;
   border-color:rgb(192,192,192);
   border-style: solid;
   border-width: 1px;
-  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.15);
+  box-shadow: inset 0px 0px 2px rgba(0,0,0,0.15);
+  margin: 0;
 }
 
 .search-bar::placeholder{
