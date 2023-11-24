@@ -1,9 +1,16 @@
 .sidebar{
   background-color: white;
+  display: flex;
+  flex-direction: column;
 
   position: fixed;
   top: 55px;
   bottom: 0;
   left: 0;
-  width: 65px;
+  width: 72px;
+}
+
+p{
+  font-size: 10px;
+  text-align: center;
 }
