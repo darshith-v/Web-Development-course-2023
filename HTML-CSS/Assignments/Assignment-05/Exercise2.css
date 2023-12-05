@@ -1,0 +1,93 @@
+.form1{
+  display: inline-block;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.First-name{
+  display: inline-block;
+  font-size: 15px;
+  width: 117px;
+  height: 30px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(205, 203, 203);
+  border-radius: 8px;
+}
+
+.Last-name{
+  font-size: 15px;
+  width: 115px;  
+  height: 30px;
+  border: 1px solid rgb(205, 203, 203);
+  border-radius: 8px;
+}
+
+.Email{
+  font-size: 15px;
+  display: block;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 245px;
+  border: 1px solid rgb(205, 203, 203);
+  border-radius: 8px;
+}
+
+.Signup{
+  height: 40px;
+  width: 250px;
+  border: 1px solid rgb(205, 203, 203);
+  border-radius: 8px;
+  background-color: rgb(19, 100, 181);
+  font-size: 15px;
+  color: white;
+}
+
+.form2{
+  border: 2px solid black;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.pickup{
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  height: 35px;
+  border: none;
+  background-color: aliceblue;
+ font-size: 15px;
+
+}
+
+.destination{
+  display: block;
+  margin: 10px;
+  width: 300px;
+  height: 35px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: aliceblue;
+  font-size: 15px;
+
+}
+
+.request{
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  color: white;
+  background-color: black;
+}
+
+.schedule{
+  display: inline-block;
+  margin: 10px;
+  width: 150px;
+  height: 35px;
+  color: black;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+}

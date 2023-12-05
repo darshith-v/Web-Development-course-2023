@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css-position.css">
+  <title>css-position</title>
+  
+</head>
+<body style="
+  height: 3000px;
+  padding-top: 60px;
+  padding-left: 82px;
+
+">
+  <header style="
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0px;
+    height: 50px;
+    z-index: 1;
+  ">
+  Header</header>
+
+
+  <div style="
+    background-color: aquamarine;
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    width: 72px;
+    bottom: 0px;
+  ">
+    sidebar
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 5px;
+      top: 0;
+    ">
+      X
+    </div>
+  </div>
+
+  <div style="
+    background-color: lightpink;
+    height: 100px;
+    width: 350px;
+  ">
+    div-2
+  </div>
+
+  <div style="
+    background-color: lightblue;
+    height: 100px;
+    width: 350px;
+    position: relative;
+  ">
+    div-1
+    <div style="
+      position: absolute;
+      background-color: black;
+      color: white;
+      padding: 4px;
+      right: 10px;
+      bottom: 10px;
+      
+    ">
+      5:00
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,45 @@
+.overall{
+  display: grid;
+  grid-template-columns: 100px 150px 100px;
+  border: 2px solid black;
+  width: 350px;
+}
+
+.cat-pic{
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  object-fit: cover;  
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.name{
+  font-weight: bold;
+  margin-top: 15px;
+
+}
+
+.cast{
+  color: grey;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.status{
+  color: grey;
+  margin: 0px;
+}
+
+.Follow{
+  width: 90px;
+  height: 40px;
+  border: none;
+  background-color: rgb(24, 149, 227);
+  font-size: 20px;
+  color: white;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+
+
