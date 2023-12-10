@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ecercise</title>
+</head>
+<body>
+  <script>
+    // 1st Question
+    function greet(name){
+      if (!name){
+        console.log(`Hi there!`)
+      }else{
+        console.log(`Hello ${name}`);
+      }
+    }
+
+    greet('darshith');
+    greet();
+
+    // 2nd Question
+
+    function convertToFahrenheit(Celsius){
+      const Fahrenheit = (Celsius * 9 / 5) + 32;
+      console.log(Fahrenheit);
+    
+    return Fahrenheit;
+    }
+
+    convertToFahrenheit(25);
+
+    // 3rd Question
+
+    function convertToCelsius (fahreheit){
+      const Celsius = (fahreheit - 32) * 5 / 9;
+      console.log(Celsius);
+
+    return Celsius;  
+    }
+
+    convertToCelsius(86);
+
+    // 4th Question
+
+    function convertTemperature(degree, unit){
+      if (unit === 'C'){
+        const result = convertToFahrenheit(degree);
+        return `${result}F`;
+
+      } else if (unit === 'F'){
+        const result = convertToCelsius(degree);
+        return `${result}C`;
+      }
+    }
+
+    convertTemperature(25,'C');
+    convertTemperature(86,'F');
+
+  </script>
+</body>
+</html>
