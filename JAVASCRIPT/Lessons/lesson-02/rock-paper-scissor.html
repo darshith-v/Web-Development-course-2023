@@ -26,16 +26,18 @@
     score.wins = 0;
     score.losses = 0;
     score.tie = 0;
+    localStorage.removeItem('score');
   ">
     Reset game</button>
 
   <script>
 
-    const score = {
+    let score = JSON.parse(localStorage.getItem('score')) || 
+     {
       wins: 0,
       losses: 0,
       tie: 0
-    };
+     };
 
     function playGame(playerMove) {
       const computerMove = pickComputerMove();
@@ -70,13 +72,15 @@
         }
       }
 
-      if (score === 'You win') {
+      if (result === 'You win') {
         score.wins += 1;
-      } else if (score === 'You lose') {
+      } else if (result === 'You lose') {
         score.losses += 1;
-      } else if (score === 'Tie !') {
+      } else if (result === 'Tie !') {
         score.tie += 1;
       };
+
+      localStorage.setItem('score',JSON.stringify(score));
 
       alert(`You chose ${playerMove} and computer chose ${computerMove}, ${result} 
 win: ${score.wins}, losses: ${score.losses}, tie: ${score.tie}`);
@@ -95,7 +99,6 @@ win: ${score.wins}, losses: ${score.losses}, tie: ${score.tie}`);
       } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
         computerMove = 'Scissor';
       }
-
       return computerMove;
     }
 
