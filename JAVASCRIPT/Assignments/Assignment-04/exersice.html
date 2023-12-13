@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercise</title>
+</head>
+
+<body>
+  <script>
+
+    // 8a
+    const Amazon = {
+      'basketball': 2095,
+      'delivery_time': '3 days'
+    };
+
+    Amazon.basketball += 500;
+    console.log(Amazon.basketball);
+    console.log(Amazon.delivery_time);
+
+    // 8b
+
+    const product1 = {
+      name:'basketball',
+      price: 1000
+    };
+
+    const product2 = {
+      name:'scoks',
+      price: 500
+    }; 
+    
+    function comparePrice(product1,product2){
+      if(product1.price < product2.price){
+        return product1;
+      }else{
+        return product2;
+      };
+    } 
+
+    console.log(comparePrice(product1,product2));
+
+    //8c
+
+    const product3 = {
+      name:'basketball',
+      price: 1000
+    };
+
+    const product4 = {
+      name:'basketball',
+      price: 1000
+    }; 
+
+    function isSameProduct(product3, product4){
+      if(product3.name === product4.name &&
+       product3.price === product4.price){
+        return true
+      } else {
+        return false
+      }
+    };
+
+    console.log(isSameProduct(product3,product4));
+
+    // 8c
+    let greet = 'Good Morning';
+    let string = greet.toLocaleLowerCase();
+    console.log(string);
+
+    //8d
+    let repeat = 'Focus..!!';
+    let str = repeat.repeat(5);
+    console.log(str);
+
+    
+
+  </script>
+</body>
+
+</html>

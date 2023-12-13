@@ -47,10 +47,28 @@
   <button onclick="
     calculator = eval(calculator);
     console.log(calculator);
+
+    localStorage.setItem('calculator', calculator);
   ">=</button>
 
+  <button onclick="
+    calculator = '';
+    console.log(calculator);
+
+    localStorage.removeItem('calculator');
+  ">clear</button>
+
   <script>
-    let calculator = '';
+
+    let calculator = localStorage.getItem('calculator') || '';
+
+    function updateCalculation(value){
+      calculator += value;
+      console.log(calculator);
+      localStorage.setItem('calculator', calculator);
+    }
+
+    
   </script>
 </body>
 </html>
