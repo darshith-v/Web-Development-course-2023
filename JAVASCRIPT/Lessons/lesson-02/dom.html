@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+
+<body>
+
+  <button class="js-button">
+    hello
+  </button>
+
+  <script>
+    document.body.innerHTML = 'Changed';
+    console.log(document.body);
+    document.title = 'DOM';
+
+    console.log(typeof document.body);
+    console.log(document.body.innerHTML);
+
+    console.log(document.getElementsByClassName("js-button").innerHTML = "Hello World!");
+
+    let name = prompt("What is your name",'');
+    alert(`My name is ${name}`);
+
+    console.log(document.querySelector('button').innerHTML = 'Changed');
+
+
+
+  </script>
+</body>
+
+</html>

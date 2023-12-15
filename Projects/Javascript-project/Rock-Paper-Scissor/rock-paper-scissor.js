@@ -1,10 +1,13 @@
-
   let score = JSON.parse(localStorage.getItem('score')) || 
     {
     wins: 0,
     losses: 0,
     tie: 0
     };
+    
+  function update() {
+     document.querySelector('.js-update').innerHTML = `win: ${score.wins}, losses: ${score.losses}, tie: ${score.tie}`;
+  };
 
   function playGame(playerMove) {
     const computerMove = pickComputerMove();
@@ -47,24 +50,30 @@
       score.tie += 1;
     };
 
-    localStorage.setItem('score',JSON.stringify(score));
+    localStorage.setItem('score', JSON.stringify(score));
 
-    alert(`You chose ${playerMove} and computer chose ${computerMove}, ${result} 
-    win: ${score.wins}, losses: ${score.losses}, tie: ${score.tie}`);
+    document.querySelector('.js-result').innerHTML = `${result}`;
+
+    document.querySelector('.js-moves').innerHTML = `You choose ${playerMove} and Computer choose ${computerMove}`;
+    
+    update();
+    
+    // document.querySelector('.js-update').innerHTML = `win: ${score.wins}, losses: ${score.losses}, tie: ${score.tie}`;
+
   }
 
-function pickComputerMove() {
+  function pickComputerMove() {
 
-  const randomNumber = Math.random();
+    const randomNumber = Math.random();
 
-  let computerMove = '';
+    let computerMove = '';
 
-  if (randomNumber >= 0 && randomNumber < 1 / 3) {
-    computerMove = 'Rock';
-  } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-    computerMove = 'Paper';
-  } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-    computerMove = 'Scissor';
+    if (randomNumber >= 0 && randomNumber < 1 / 3) {
+      computerMove = 'Rock';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+      computerMove = 'Paper';
+    } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+      computerMove = 'Scissor';
+    }
+    return computerMove;
   }
-  return computerMove;
-}
