@@ -22,6 +22,9 @@
     updateCartQuantity(3)
   ">+3</button>
 
+  <button onclick="
+    updateCartQuantity(-3)
+  ">-3</button>
 
   <button onclick="
     cartQuantity = 0;
@@ -33,13 +36,16 @@
     let cartQuantity = 0;
 
     function updateCartQuantity(change){
+
       if(cartQuantity + change > 10){
-        alert(`The cart is full`);
-      } else if (cartQuantity + change < 0){
-        alert(`Not enough items in the cart`);
-      } else{
+        alert(`The cart is full ${cartQuantity}`);
+
+      }else if(cartQuantity + change < 0){
+        alert(`Not enough to have place in cart`);
+
+      }else{
         cartQuantity += change;
-        console.log(`Cart quality: ${cartQuantity}`);
+        console.log(cartQuantity);
       }
     }
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+
+    <button onclick="
+      document.querySelector('.js-choice')
+        .innerHTML = 'You chose: heads';
+    ">heads</button>
+
+    <button onclick="
+      document.querySelector('.js-choice')
+        .innerHTML = 'You chose: tails';
+    ">tails</button>
+
+    <p>
+
+      <input  placeholder="Enter your name" type="text" class="js-input-column">
+
+      <button class="js-submit-button"
+      onclick="
+        submitbutton();
+      ">Submit</button>
+
+      <p class="js-result"></p>
+
+    </p>
+
+  <script>
+
+    function submitbutton(){
+      const inputElement = document.querySelector('.js-input-column').value;
+
+      // const name = inputElement.value;
+      
+      document.querySelector('.js-result').innerHTML = `My name is : ${inputElement}`;
+    };
+  </script>
+  </body>
+
+</html>

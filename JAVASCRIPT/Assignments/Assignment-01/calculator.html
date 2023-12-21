@@ -57,6 +57,8 @@
     localStorage.removeItem('calculator');
   ">clear</button>
 
+  <p class="total"></p>
+
   <script>
 
     let calculator = localStorage.getItem('calculator') || '';
@@ -66,7 +68,7 @@
       console.log(calculator);
       localStorage.setItem('calculator', calculator);
     }
-    
+
   </script>
 
 </body>
