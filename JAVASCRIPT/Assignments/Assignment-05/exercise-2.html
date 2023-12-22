@@ -16,7 +16,9 @@
 
     <p>
 
-      <input  placeholder="Enter your name" type="text" class="js-input-column">
+      <input  placeholder="Enter your name" type="text" class="js-input-column" onkeydown="
+        handleNameKeydown(event);
+        ">
 
       <button class="js-submit-button"
       onclick="
@@ -28,6 +30,13 @@
     </p>
 
   <script>
+
+    function handleNameKeydown(event){
+
+      if(event.key === 'Enter'){
+        submitbutton();
+      }
+    }
 
     function submitbutton(){
       const inputElement = document.querySelector('.js-input-column').value;

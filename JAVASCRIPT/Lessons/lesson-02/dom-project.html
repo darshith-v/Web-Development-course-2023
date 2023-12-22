@@ -44,13 +44,13 @@
     function calculateTotal(){
       const inputElement = document.querySelector('.js-cost-input');
 
-      let cost = Number(inputElement.value);
+      let cost = Number(inputElement.value) * 100;
 
-      if (cost < 40){
-        cost = cost + 10;
+      if (cost < 4000){
+        cost = cost + 1000;
       };
 
-      document.querySelector('.total-cost').innerHTML = `$${cost}`;
+      document.querySelector('.total-cost').innerHTML = `$${cost / 100}`;
     }
     
     // subscribe to subscribed vise varsa

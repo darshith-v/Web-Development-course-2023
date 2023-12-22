@@ -7,29 +7,38 @@
 </head>
 <body>
   <button onclick="
-      console.log(`cart quantity ${cartQuantity}`);
+      message()
     ">Show Quantity</button>
 
   <button onclick="
     updateCartQuantity(1)
+    message()
   ">Add to cart</button>
 
   <button onclick="
     updateCartQuantity(2)
+    message()
   ">+2</button>
 
   <button onclick="
     updateCartQuantity(3)
+    message()
   ">+3</button>
 
 
   <button onclick="
     cartQuantity = 0;
-    console.log('cart reset');
-    console.log(`cart quality ${cartQuantity}`);
+    message()
   ">Reset cart</button>
 
+  <p class="js-message"></p>
+
   <script>
+
+    function message(){
+      document.querySelector('.js-message').innerHTML = `Cart Quantity: ${cartQuantity}`;
+    }
+
     let cartQuantity = 0;
 
     function updateCartQuantity(change){

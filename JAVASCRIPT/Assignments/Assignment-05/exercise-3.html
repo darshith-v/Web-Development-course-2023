@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <title>exercise-4</title>
+  <body>
+
+    <input  placeholder="Enter anything" class="js-input" onkeyup=" 
+              handleonKeyup();
+    ">
+
+    <p class="js-message"></p>
+
+    <script>
+      function handleonKeyup(){
+
+      const inputElement = document.querySelector('.js-input');
+
+      document.querySelector('.js-message').innerHTML = inputElement.value;
+
+      }
+    </script>
+  </body>
+
+</html>
