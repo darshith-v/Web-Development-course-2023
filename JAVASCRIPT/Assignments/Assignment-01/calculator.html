@@ -10,56 +10,60 @@
   <p>
     <button onclick="
         calculator += '1';
-        console.log(calculator);
+        message();
     ">1</button>
 
     <button onclick="
         calculator += '2';
-        console.log(calculator);
+        message();
     ">2</button>
   </p>
 
   <p>
     <button onclick="
         calculator += '3';
-        console.log(calculator);
+        message();
     ">3</button>
 
     <button onclick="
         calculator += '4';
-        console.log(calculator);
+        message();
     ">4</button>
   </p>
 
   <p>
     <button onclick="
       calculator += ' + ';
-      console.log(calculator);
+      message();
     ">+</button>
 
     <button onclick="
       calculator += ' - ';
-      console.log(calculator);
+      message();
     ">-</button>
   </p>
 
   <button onclick="
     calculator = eval(calculator);
-    console.log(calculator);
+    message();
 
     localStorage.setItem('calculator', calculator);
   ">=</button>
 
   <button onclick="
     calculator = '';
-    console.log(calculator);
+    message();
 
     localStorage.removeItem('calculator');
   ">clear</button>
 
-  <p class="total"></p>
+  <p class="js-message"></p>
 
   <script>
+
+    function message(){
+      document.querySelector('.js-message').innerHTML = `${calculator}`;
+    }
 
     let calculator = localStorage.getItem('calculator') || '';
 

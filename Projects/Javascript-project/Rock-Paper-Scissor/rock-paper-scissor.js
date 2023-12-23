@@ -54,7 +54,13 @@
 
     document.querySelector('.js-result').innerHTML = `${result}`;
 
-    document.querySelector('.js-moves').innerHTML = `You choose ${playerMove} and Computer choose ${computerMove}`;
+    document.querySelector('.js-moves').innerHTML =
+      `You
+      
+      <img src="images/${playerMove}-emoji.png" class="move-icons">
+      <img src="images/${computerMove}-emoji.png" class="move-icons">
+
+      Computer`;
     
     update();
     

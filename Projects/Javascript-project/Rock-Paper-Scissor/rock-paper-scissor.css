@@ -1,0 +1,40 @@
+body{
+  font-family: 'Arial';
+  background-color: black;
+  color: white;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.move-icons{
+  background-color: transparent;
+  height: 50px;
+}
+
+.move-botton{
+  margin: 8px;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  cursor: pointer;
+  border: 3px solid white;
+  background-color: transparent;
+}
+
+
+.reuslt{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reset-game{
+  color: black;
+  border: none;
+  padding: 15px;
+}
+.moves{
+  margin-bottom: 25px;
+}
