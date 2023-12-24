@@ -52,6 +52,10 @@ body{
   color: rgb(18, 221, 18);
 }
 
+.error-message{
+  color: red;
+}
+
 
 </style>
 
@@ -78,6 +82,7 @@ body{
   ">Calculate</button>
 
   <p class="total-cost"></p>
+  <p class="js-error-Message error-message"></p>
 
   <script>
     // for input to works as calculate button using "enter button"
@@ -103,9 +108,13 @@ body{
 
       let cost = Number(inputElement.value) * 100;
 
-      if(cost < -5){
-        
+      if(cost < 0){
+        document.querySelector('.js-error-Message')
+        .innerHTML = `Error: cost cannot be less than $0`
+
+        return;
       }
+
       if (cost < 4000){
         cost = cost + 1000;
       };
