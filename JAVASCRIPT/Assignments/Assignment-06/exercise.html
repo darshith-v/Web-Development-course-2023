@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercise</title>
+  <link rel="stylesheet" href="exercise.css">
+
+</head>
+
+<body>
+  <h3>Exercise problems</h3>
+  <p>10.a</p>
+  <button class="Amazon-Button">Add to Cart</button>
+
+  <p>10.b</p>
+  <div class="uber-buttons">
+    <button class="Request-now">Request now</button>
+    <button class="schedule">Schedule for later</button>
+  </div>
+
+  <p>10.c</p>
+  <button onclick="
+    gamingButton()
+   " class="js-toggled-button toggled">
+   Gaming
+  </button>
+
+  <p>10.d</p>
+  <div class="threebuttons">
+
+    <button class="js-toggled-button-1 toggled-button"
+     onclick="
+      toggledButton('.js-toggled-button-1');
+    ">
+      Gaming
+    </button>
+  
+    <button class="js-toggled-button-2 toggled-button"
+     onclick="
+      toggledButton('.js-toggled-button-2');
+    ">
+      Music
+    </button>
+  
+    <button class="js-toggled-button-3 toggled-button"
+     onclick="
+      toggledButton('.js-toggled-button-3');
+    ">
+      Tech
+    </button>
+
+  </div>
+
+  <script src="exercise.js"></script>
+
+  <p>10.e [Calculator]</p>
+
+  <div class="calculator">
+    <p>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+    </p>
+    <p>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+    </p>
+    <p>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>*</button>
+    </p>
+    <p>
+      <button>0</button>
+      <button>.</button>
+      <button>=</button>
+      <button>/</button>
+    </p>
+    <p>
+      <button>clear</button>
+    </p>
+  </div>
+</body>
+</html>
