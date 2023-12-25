@@ -29,3 +29,24 @@ function turnOffPreviousButton(){
     previousButton.classList.remove('is-toggled');
   }
 }
+
+
+
+
+localStorage.getItem('calculation') || '';
+
+// Display the calculation when the page first loads.
+displayCalculation();
+
+
+function updateCalculation(value) {
+  calculation = calculation + value;
+
+  displayCalculation();
+
+  localStorage.setItem('calculation', calculation);
+}
+
+function displayCalculation() {
+  document.querySelector('.js-calculation').innerHTML = `${calculation}`;
+}

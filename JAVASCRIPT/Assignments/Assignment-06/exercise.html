@@ -52,57 +52,118 @@
 
   </div>
 
-  <script src="exercise.js"></script>
-
   <p>10.e [Calculator]</p>
 
   <div class="calculator">
+
+    <p class="js-calculation calculation"></p>
+
     <p>
-      <button onclick="">1</button>
 
-      <button>2</button>
+      <button class="calculator-button calculator-grey"
+       onclick="
+       updateCalculation('1');
+       ">1</button>
 
-      <button>3</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation('2');
+      ">2</button>
 
-      <button>+</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation('3');
+      ">3</button>
+
+      <button class="calculator-button calculator-orenge"
+      onclick="
+      updateCalculation(' + ');
+      ">+</button>
 
     </p>
 
     <p>
-      <button>4</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation('4');
+      ">4</button>
 
-      <button>5</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation('5');
+      ">5</button>
 
-      <button>6</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation('6');
+      ">6</button>
 
-      <button>-</button>
+      <button class="calculator-button calculator-orenge"
+      onclick="
+      updateCalculation(' - ');
+      ">-</button>
 
     </p>
 
     <p>
-      <button>7</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation('7');
+      ">7</button>
 
-      <button>8</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation('8');
+      ">8</button>
 
-      <button>9</button>
-
-      <button>*</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation('9');
+      ">9</button>
+ 
+      <button class="calculator-button calculator-orenge"
+      onclick="
+      updateCalculation(' * ');
+      ">*</button>
     </p>
 
     <p>
-      <button>0</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation('0');
+      ">0</button>
 
-      <button>.</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      updateCalculation(' . ');
+      ">.</button>
 
-      <button>=</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      calculation = eval(calculation);
 
-      <button>/</button>
+      displayCalculation();
+
+      localStorage.setItem('calculation', calculation);
+      ">=</button>
+
+      <button class="calculator-button calculator-orenge"
+      onclick="
+      updateCalculation(' / ');
+      ">/</button>
     </p>
 
     <p>
-      <button>clear</button>
+      <button class="calculator-button calculator-grey"
+      onclick="
+      calculation = '';
+
+      displayCalculation();
+
+      localStorage.setItem('calculation', calculation);
+      ">clear</button>
     </p>
-    
+    <script src="exercise.js"></script>
   </div>
 </body>
 </html>
