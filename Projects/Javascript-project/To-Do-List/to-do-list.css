@@ -1,3 +1,29 @@
-*{
+body{
   font-family: 'Arial';
+}
+
+.to-do-input,
+.to-do-list{
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 10px;
+}
+
+.deleteButton,
+.to-do-input{
+  height: 35px;
+}
+
+.deleteButton{
+  border: none;
+  color: white;
+  background-color: rgb(227, 26, 26);
+}
+
+.addButton{
+  border: none;
+  color: white;
+  background-color: green;
 }
