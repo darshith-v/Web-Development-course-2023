@@ -5,8 +5,6 @@ let myArray = [10, 20, 30];
 myArray[2] = 99;
 console.log(myArray);
 
-
-
 // 2nd question
 
 function getLastValue(array) {
@@ -33,9 +31,6 @@ console.log(getLastValue([1, 3, 5, 7, 8]));
  }
  
  console.log(arraySwap([23, 76, 99, 10, 6]));
- 
-
-
 
 // 4th question
 
