@@ -1,4 +1,4 @@
-/*
+
 // 1st question
 
 let words = ['hello', 'world', 'search', 'good','search'];
@@ -106,7 +106,6 @@ console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
 // console.log(removeEgg(['ham','apple','egg']));
 // console.log(removeEgg(['egg','apple','ham']));
 
-*/
 
 function removeEgg(foods) {
   const foodsCopy = foods.slice();
@@ -138,6 +137,29 @@ function removeEgg(foods) {
 const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
 console.log(removeEgg(foods));
 console.log(foods);
+
+
+
+for (let i = 1; i <= 20; i++){
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log('FizzBuzz');
+  } else if (i % 3 === 0) {
+    console.log('Fizz');
+  } else if (i % 5 === 0) {
+    console.log('Buzz');
+  } else {
+    console.log(i);
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
