@@ -30,7 +30,9 @@ body{
   font-weight: bold;
 }
 
-.reset-game{
+
+.reset-game,
+.auto-play{
   color: black;
   border: none;
   padding: 15px;
