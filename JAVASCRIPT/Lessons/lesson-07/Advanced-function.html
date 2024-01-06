@@ -17,13 +17,45 @@
     //Anonymous function
 
  // const function1 = function greeting(){ (we can remove the 'greeting')
-    const function1 = function(){
+    const function1 = function (){
       console.log('hello2');
     }
 
     console.log(function1);
-    console.log(typeof function1);
-    function1()
+    console.log(typeof function1)
+    function1();
+
+    const object1 = {
+      num: 2,
+      fun : function (){
+        console.log('hello3');
+      }
+    }
+
+    console.log(object1.num);
+    object1.fun();
+
+    // passing a function into another function
+    function run(param){
+      param();
+    }
+    run(function(){
+      console.log('hello4');
+    })
+
+    setTimeout(function(){
+      console.log('Timeout');
+    },3000);
+
+    // const interval = setInterval(function(){
+    //   console.log('Timeout');
+    // },3000)
+
+    console.log('hello-world');
+    // console.log(interval);
+
+
+
   </script>
 </body>
 </html>
