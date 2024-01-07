@@ -11,27 +11,24 @@ rendartodo()
 function rendartodo() {
 
   let todoListHTML = '';
-  
-  for (let i = 0; i < todoList.length; i++){
-    const todoObject = todoList[i];
-    // const name = todoList.name;
-    // const dueDate = todoList.dueDate;
-    const { name, dueDate } = todoObject;
 
+  todoList.forEach(function (todoObject, index) {
+
+    const { name, dueDate } = todoObject;
+  
     const html = `
                   <div>${name}</div>
-
+  
                   <div>${dueDate}</div>
-
+  
                   <button class = "deleteButton"
                     onclick = "
-                    todoList.splice(${i},1);
+                    todoList.splice(${index},1);
                     rendartodo();
                   ">Delete</button>
                   `;
     todoListHTML += html;
-  
-  }
+  })
   
   document.querySelector('.js-to-do-list').innerHTML = todoListHTML;
   
