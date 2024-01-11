@@ -21,18 +21,28 @@ function rendartodo() {
   
                   <div>${dueDate}</div>
   
-                  <button class = "deleteButton"
-                    onclick = "
-                    todoList.splice(${index},1);
-                    rendartodo();
-                  ">Delete</button>
+                  <button class = "deleteButton js-delete-todo-button"
+                    >Delete</button>
                   `;
     todoListHTML += html;
   })
   
   document.querySelector('.js-to-do-list').innerHTML = todoListHTML;
   
+  document.querySelectorAll('js-delete-todo-button')
+    .forEach((deleteButton, index) => {
+      deleteButton.addEventListener('click', () => {
+        todoList.splice(index, 1);
+        rendartodo();
+    });
+  });
+
 }
+
+document.querySelector('.js-add-button').addEventListener('click', () => {
+  todoadd();
+});
+
 
 function todoadd() {
   const inputElement = document.querySelector('.js-name-input');

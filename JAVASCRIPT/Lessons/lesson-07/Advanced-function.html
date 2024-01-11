@@ -7,9 +7,26 @@
 </head>
 <body>
   <h3>Advanced Function</h3>
+
+  <button class="js-button">click</button>
+
   <script>
 
-    /*
+    const buttonElement = document.querySelector('.js-button');
+
+    const Function = () => {
+      console.log('click');
+    };
+
+    buttonElement.addEventListener('click', Function);
+
+    buttonElement.addEventListener('click', () => {
+      console.log('click1');
+    })
+
+    buttonElement.removeEventListener('click', Function);
+
+   /*  
     function greeting(){
       console.log('hello');
     }
@@ -18,7 +35,7 @@
 
     //Anonymous function
 
- // const function1 = function greeting(){ (we can remove the 'greeting')
+   // const function1 = function greeting(){ (we can remove the 'greeting')
     const function1 = function (){
       console.log('hello2');
     }
@@ -74,16 +91,65 @@
     }
 
     console.log(result);
-   */
+    
+    [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+    ].forEach(function(value,index){
+      console.log(index,value);
+    })
+
+
+   // Regular function
+   const regularFunction = function (){
+     console.log('Regular function');
+    }
+    
+    regularFunction();
     
 
+    // Arrow Function;
+    const arrowFunction = () => {
+      console.log('Arrow function');
+    }
+ 
+    arrowFunction();
 
 
+    // shortcut
+    const oneparam = (param) => console.log(param + 2);
+  
+    oneparam(2);
+    */
 
-
-
-
-
+    /*
+    // let's add arrowfunctin to forEach method
+    [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+    ].forEach(function(values, index){
+      if(values === 'wash dishes'){
+        return;
+      }
+      console.log(values);
+    })
+    
+    [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+    ].forEach((value, index) => {
+      if(value === 'wash dishes'){
+        return;
+      }
+      console.log(value);
+    })
+    
+    // addEventListener('event','function');
+    
+    */   
 
 
 
