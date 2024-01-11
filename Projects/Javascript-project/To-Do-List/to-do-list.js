@@ -1,10 +1,12 @@
-let todoList = [{
-  name: 'Wash dishes',
-  dueDate: '2022-12-12'
+const todoList = JSON.parse(localStorage.getItem('todoList')) || [{
+  name: 'make dinner',
+  dueDate: '2022-12-22'
 }, {
-  name: 'Watch youtube',
-  dueDate: '2022-12-11'
-  }];
+  name: 'wash dishes',
+  dueDate: '2022-12-22'
+}];
+
+
 
 rendartodo()
 
@@ -12,7 +14,7 @@ function rendartodo() {
 
   let todoListHTML = '';
 
-  todoList.forEach(function (todoObject, index) {
+  todoList.forEach(function (todoObject) {
 
     const { name, dueDate } = todoObject;
   
@@ -64,4 +66,9 @@ function todoadd() {
   inputElement.value = '';
   dateinputElement.value = '';
 
+  saveStorage();
+}
+
+function saveStorage() {
+  localStorage.setItem('todoList', JSON.stringify(todoList));
 }
