@@ -29,9 +29,10 @@ function rendartodo() {
   
   document.querySelector('.js-to-do-list').innerHTML = todoListHTML;
   
-  document.querySelectorAll('js-delete-todo-button')
+  document.querySelectorAll('.js-delete-todo-button')
     .forEach((deleteButton, index) => {
       deleteButton.addEventListener('click', () => {
+        console.log(index);
         todoList.splice(index, 1);
         rendartodo();
     });
