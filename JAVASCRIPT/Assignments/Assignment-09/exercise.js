@@ -64,6 +64,31 @@ console.log(countPositive([-2, 3, -5, 7, 10]));
 // 3
 
 
+function addNum(array,num) {
+  return array.map((value) => value * num);
+}
+
+console.log(addNum([1, 1, 2], 2));
+
+/*
+function removeEgg(foods) {
+  return foods.filter((food) => food !== 'egg');
+}
+
+console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+*/
 
 
+function removeEgg(foods) {
+  let eggsRemoved = 0;
 
+  return foods.filter((food) => {
+    if (food === 'egg' && eggsRemoved < 2) {
+      eggsRemoved++;
+      return false;
+    }
+    return true;
+  })
+}
+
+console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));

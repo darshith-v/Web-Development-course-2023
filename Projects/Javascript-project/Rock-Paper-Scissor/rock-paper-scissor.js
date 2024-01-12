@@ -49,6 +49,11 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+let autoplayButton = document.querySelector('.js-auto-play');
+
+autoplayButton.addEventListener('click', () => {
+  autoplay();
+});
 
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
