@@ -40,3 +40,7 @@ body{
 .moves{
   margin-bottom: 25px;
 }
+
+.reset-confirmation{
+  color: white;
+}

@@ -19,9 +19,15 @@ function autoplay() {
       playGame(playerMove);
     }, 2000);
     isAutoPlaying = true;
+
+    document.querySelector('.js-auto-palying-button')
+      .innerHTML = 'Stop Playing';
   } else {
     clearInterval(intervalId);
     isAutoPlaying = false;
+
+    document.querySelector('.js-auto-palying-button')
+      .innerHTML = 'Auto Play';
   }
 }
 
@@ -37,21 +43,67 @@ document.querySelector('.js-scissor-button').addEventListener('click', () => {
   playGame('Scissor');
 })
 
+function resetScore() {
+  score.wins = 0;
+  score.losses = 0;
+  score.tie = 0;
+  localStorage.removeItem('score');
+  update();
+}
+
+document.querySelector('.js-reset-game').addEventListener('click', () => {
+  resetScore();
+})
+
+
 // let addEventListener() with keydown
 
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'r') {
+document.body.addEventListener('keydown', (event) => {
+  const key = event.key;
+  if (key === 'r') {
     playGame('Rock')
-  } else if (event.key === 'p') {
+  } else if (key === 'p') {
     playGame('Paper');
-  } else if (event.key === 's') {
+  } else if (key === 's') {
     playGame('Scissor');
+  } else if (key === 'a') {
+    autoplay();
+  } else if (key === "Backspace" || key === "Delete"){
+    showResetConfirmation();
   }
 });
 
-let autoplayButton = document.querySelector('.js-auto-play');
+function showResetConfirmation() {
+  document.querySelector('.js-reset-confirmation').innerHTML = `
+    Are you sure you want to reset the score?
 
-autoplayButton.addEventListener('click', () => {
+    <button class = "js-reset-confirm-yes
+      reset-confirm-button">
+    Yes
+    </button>
+
+    <button class = "js-reset-confirm-no
+      reset-confirm-button">
+    No
+    </button>
+  `;
+
+  document.querySelector('.js-reset-confirm-yes').addEventListener('click', () => {
+    resetScore();
+    hideResetConfirmation();
+  });
+
+  document.querySelector('.js-reset-confirm-no').addEventListener('click', () => {
+    hideResetConfirmation();
+  });
+}
+
+function hideResetConfirmation() {
+  document.querySelector('.js-reset-confirmation').innerHTML = '';
+}
+
+
+document.querySelector('.js-auto-palying-button').addEventListener('click', () => {
   autoplay();
 });
 
