@@ -92,3 +92,105 @@ function removeEgg(foods) {
 }
 
 console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+const add = function () {
+  console.log(2 + 3);
+};
+
+add();
+
+function runTwice(fun) {
+  fun()
+  fun()
+}
+
+runTwice(function () {
+  console.log('12b');
+});
+
+runTwice(add);
+
+
+const buttonElement = document.querySelector('.js-click-button');
+
+buttonElement.addEventListener('click', () => {
+  updateButton();
+})
+
+
+function updateButton() {
+
+  buttonElement.innerHTML = 'Loading..';
+
+  setTimeout(function () {
+    buttonElement.innerHTML = 'Finished!';
+  }, 2000)
+}
+
+
+
+const buttonElement1 = document.querySelector('.js-cart-button')
+
+buttonElement1.addEventListener('click', () => {
+  displayMessage();
+})
+
+let timeoutId;
+
+function displayMessage() {
+  // buttonElement1.innerHTML = 'Added'
+  const messageElement = document.querySelector('.message');
+
+  messageElement.innerHTML = 'Added'
+
+  clearTimeout(timeoutId);
+
+  clearTimeout(function () {
+    message.innerHTML = '';
+  }, 2000);
+
+};
+
+let message1 = 2;
+
+let intervalId;
+
+let isDisplayingNotification;
+
+const addButton = document.queryselector('.js-add-button');
+const removeButton = document.queryselector('.js-remove-button');
+
+addButton.addEventListener('click', () => {
+  message1++;
+  displayNotification();
+});
+
+removeButton.addEventListener('click', () => {
+  message1--;
+  displayNotification();
+});
+
+displayNotification();
+
+function displayNotification() {
+  if (isDisplayingNotification) {
+    return;
+  }
+
+  isDisplayingNotification = true;
+
+  intervalId = setInterval(function () {
+    if (document.title === 'App') {
+      document.title = `(${message1}) New message`;
+    } else {
+      document.title = 'App';
+    }
+  }, 1000);
+};
+
+function stopNotification() {
+  isDisplayingNotification = false;
+
+  clearInterval(intervalId);
+  document.title = 'App';
+}
